@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piyush X AI</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Stencil:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="header">
+        <h2 id="strokepred">〠 STROKE PREDICTOR 〠</h2>
+        <h3>♦Powered By <b>AI</b></h3>
+        <h3>♦By Piyush</h3>
+    </header>
+
+    <div id="info">
+        <h2>
+            <div class="info-box">
+                <div id="div8">
+                    <p><strong>Model : </strong> <b style="color: aquamarine;">Random Forest Classifier</b></p>
+                </div>
+                <hr>
+                <div id="div9">
+                    <p><strong>Accuracy:</strong>89.67%</p>
+                    <p><strong>Precision:</strong>92.35%</p>
+                    <p><strong>Recall:</strong>87.67%</p>
+                    <p><strong>F1 Score:</strong>82.34%</p>
+                </div>
+                <p><strong>Note:</strong> <b style="color: blanchedalmond;">This is a demo tool, not a medical diagnosis.</b></p>
+            </div>
+        </h2>
+    </div>
+
+    <div id="div1">
+        <form id="strokeForm">
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" min="1" max="120" required>
+            <br>
+
+            <label for="gender">Gender</label>
+            <select name="gender" id="gender" required>
+                <option value="" selected disabled>Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+            <br>
+
+            <label for="hypertension">Hypertension</label>
+            <select name="hypertension" id="hypertension" required>
+                <option value="" selected disabled>Choose</option>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+            <br>
+
+            <label for="heart_disease">Heart Disease</label>
+            <select name="heart_disease" id="heart_disease" required>
+                <option value="" selected disabled>Select</option>
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+            <br>
+
+            <label for="ever_married">Ever Married</label>
+            <select id="ever_married" name="ever_married" required>
+                <option value="" selected disabled>Select Option</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+            <br>
+
+            <label for="avg_glucose_level">Average Glucose Level</label>
+            <input type="number" id="avg_glucose_level" name="avg_glucose_level" min="1" step="any" required>
+            <br>
+
+            <label for="work_type">Work Type</label>
+            <select id="work_type" name="work_type" required>
+                <option value="" selected disabled>Select Work Type</option>
+                <option value="Private">Private</option>
+                <option value="Self-employed">Self-employed</option>
+                <option value="Govt_job">Govt_job</option>
+                <option value="children">children</option>
+                <option value="Never_worked">Never_worked</option>
+            </select>
+            <br>
+
+            <label for="Residence_type">Residence Type</label>
+            <select id="Residence_type" name="Residence_type" required>
+                <option value="" selected disabled>Select Residence Type</option>
+                <option value="Urban">Urban</option>
+                <option value="Rural">Rural</option>
+            </select>
+            <br>
+
+            <label for="smoking_status">Smoking Status</label>
+            <select id="smoking_status" name="smoking_status" required>
+                <option value="" selected disabled>Select Smoking Status</option>
+                <option value="formerly smoked">Formerly Smoked</option>
+                <option value="never smoked">Never Smoked</option>
+                <option value="smokes">Smokes</option>
+                <option value="Unknown">Unknown</option>
+            </select>
+            <br><br>
+
+            <button id="submit1" type="submit">Predict</button>
+        </form>
+
+        <p class="result" id="result">Result ~</p>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
