@@ -119,3 +119,59 @@ button:hover {
   padding-left: 130px;
   padding-top: 20px;
 }
+
+
+@media (max-width: 768px) {
+  #header {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 12px;
+  }
+
+  #strokepred {
+    margin-right: 0;
+    font-size: 22px;
+    text-align: center;
+  }
+
+  #header h3 {
+    top: 0;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  #header b {
+    margin-right: 0;
+    margin-top: 0;
+  }
+
+  #info {
+    display: block;
+    padding: 0 16px;
+    text-align: center;
+  }
+
+  #div8,
+  #div9 {
+    padding-left: 0;
+    padding-top: 10px;
+  }
+
+  #div1 {
+    width: calc(100% - 24px);
+    margin: 24px auto;
+    padding: 20px 16px;
+  }
+
+  input,
+  select,
+  button {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  #result {
+    font-size: 16px;
+  }
+}
